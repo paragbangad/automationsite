@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ProjectWork.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="Site.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <a href="/Default.aspx">
+                        <asp:Image ID="Image1" ImageUrl="~/Images/icon-da.png" runat="server" height="42" width="42"/>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="menu">
+                        <asp:HyperLink CssClass="menu-item" ID="HyperLink1" NavigateUrl="~/DataTable.aspx" runat="server">Data Table</asp:HyperLink>
+                        <asp:HyperLink CssClass="menu-item" ID="HyperLink2" NavigateUrl="~/Frames/main.aspx" runat="server">Frame</asp:HyperLink>
+                        <asp:HyperLink CssClass="menu-item" ID="HyperLink3" NavigateUrl="~/javascript.aspx" runat="server">Javascripts Alerts</asp:HyperLink>
+                        <asp:HyperLink CssClass="menu-item" ID="HyperLink4" NavigateUrl="~/cursor_movement.aspx" runat="server">Cursor Movement</asp:HyperLink>
+                        <asp:HyperLink CssClass="menu-item" ID="HyperLink5" NavigateUrl="~/WaitForPagetoLoad.aspx" runat="server">Wait For Page to Load</asp:HyperLink>
+                        <asp:HyperLink CssClass="menu-item" ID="HyperLink6" NavigateUrl="~/FileIO.aspx" runat="server">File I/O</asp:HyperLink>
+                        <asp:HyperLink CssClass="menu-item" ID="HyperLink7" NavigateUrl="~/PageFlow.aspx" runat="server">Page Flow</asp:HyperLink>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="footer">Copyright © <%=DateTime.Now.Year %> FirstAmerica All Rights Reserved. | Disclaimer </td>
+            </tr>
+        </table>
+
+        <div>
+        </div>
+    </form>
+</body>
+</html>
