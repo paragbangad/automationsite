@@ -18,7 +18,7 @@
 
     <div class="article">
         <b>Market Activity Approaching Potential</b>
-        <asp:DropDownList ID="DropDownList1" runat="server">
+        <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="true" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
             <asp:ListItem Value="onev">one</asp:ListItem>
             <asp:ListItem Value="twov">two</asp:ListItem>
             <asp:ListItem Value="3v">3</asp:ListItem>

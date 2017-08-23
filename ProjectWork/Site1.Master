@@ -30,6 +30,7 @@
                         <asp:HyperLink CssClass="menu-item" ID="HyperLink5" NavigateUrl="~/WaitForPagetoLoad.aspx" runat="server">Wait For Page to Load</asp:HyperLink>
                         <asp:HyperLink CssClass="menu-item" ID="HyperLink6" NavigateUrl="~/FileIO.aspx" runat="server">File I/O</asp:HyperLink>
                         <asp:HyperLink CssClass="menu-item" ID="HyperLink7" NavigateUrl="~/PageFlow.aspx" runat="server">Page Flow</asp:HyperLink>
+                        <asp:HyperLink CssClass="menu-item" ID="HyperLink8" NavigateUrl="~/ListBox.aspx" runat="server">List Box</asp:HyperLink>
                     </div>
                 </td>
             </tr>
@@ -40,7 +41,7 @@
                 </td>
             </tr>
             <tr>
-                <td class="footer">Copyright © <%=DateTime.Now.Year %> FirstAmerica All Rights Reserved. | Disclaimer </td>
+                <a "General Text">
             </tr>
         </table>
 
